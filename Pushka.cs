@@ -1,18 +1,22 @@
+using System;
+
 double x0;
+
 while (true)
 {
-    Console.WriteLine("Введите координату x");
+    Console.WriteLine("Введите координату x пушки");
     if (!double.TryParse(Console.ReadLine(), out x0))
     {
-        Console.WriteLine("Ошибка. Введите x числом");
+        Console.WriteLine("Введите x числом");
     }
     else { break; }
 }
 
 double y0;
+
 while (true)
 {
-    Console.WriteLine("Ошибка. Координата не может быть символом");
+    Console.WriteLine("Введите координату y");
     if (double.TryParse(Console.ReadLine(), out y0))
     {
         if (y0 >= 0)
@@ -21,11 +25,17 @@ while (true)
         }
         else
         {
-            Console.WriteLine("Ошибка. y не может быть отрицательным");
+            Console.WriteLine("Ошибка. ");
         }
     }
-    else { Console.WriteLine("Ошибка. Координата не может быть символом"); }
+
+    else
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Введите координату y числом");
+    }
 }
+
 
 double v;
 while (true)
