@@ -25,7 +25,7 @@ while (true)
         }
         else
         {
-            Console.WriteLine("Ошибка. ");
+            Console.WriteLine("Ошибка. Координата y не может быть отрицательной ");
         }
     }
 
