@@ -1,10 +1,8 @@
-using System;
-
 double x0;
 
 while (true)
 {
-    Console.WriteLine("Введите координату x пушки");
+    Console.WriteLine("Введите координату x");
     if (!double.TryParse(Console.ReadLine(), out x0))
     {
         Console.WriteLine("Введите x числом");
